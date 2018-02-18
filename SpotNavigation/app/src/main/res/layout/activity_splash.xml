@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/rootlayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              tools:context=".Splash">
+    <ImageView
+        android:id="@+id/imapp"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/appicon"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentTop="true"
+         />
+    <TextView
+        android:id="@+id/txtApptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Spot Navigation"
+        android:layout_marginLeft="95dp"
+        android:layout_alignLeft="@id/imapp"
+        android:textSize="30sp"/>
+    <ImageView
+        android:id="@+id/spicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tmarker6"
+        android:layout_below="@id/txtApptitle"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/txtLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Getting Your Location..."
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
